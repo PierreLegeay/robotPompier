@@ -133,15 +133,15 @@ void StructSDLInit(s_PrintSDL *screen, s_Room *room)
   screen->backg = SDL_SetVideoMode(SPRITE_SIZE * room->sizeX, (SPRITE_SIZE * room->sizeY) + 4 * SPRITE_SIZE, 32, SDL_HWSURFACE);//Creation de la fenetre SDL
   screen->white = SDL_MapRGB(screen->backg->format, 255, 255, 255);//On definit la couleur blanche
   SDL_FillRect(screen->backg, NULL, screen->white);//Remplissage de la fenetre
-  screen->tabImg[0] = SDL_LoadBMP("./src/wall.bmp");//Chargement du sprite mur
-  screen->tabImg[1] = SDL_LoadBMP("./src/robot.bmp");//Chargement du sprite robot
-  screen->tabImg[2] = SDL_LoadBMP("./src/fire1.bmp");
-  screen->tabImg[3] = SDL_LoadBMP("./src/fire2.bmp");
-  screen->tabImg[4] = SDL_LoadBMP("./src/fire3.bmp");
-  screen->tabImg[5] = SDL_LoadBMP("./src/stopfire.bmp");
-  screen->tabImg[6] = SDL_LoadBMP("./src/pdv.bmp");//Chargement de l'image pdv 
-  screen->tabImg[7] = SDL_LoadBMP("./src/nbmove.bmp");//Chargement de l'image nombre de mouvements;
-  screen->tabImg[8] = SDL_LoadBMP("./src/robotstopfire.bmp");//Chargement du sprite du robot possedant l'extincteur
+  screen->tabImg[0] = SDL_LoadBMP("./ressources/wall.bmp");//Chargement du sprite mur
+  screen->tabImg[1] = SDL_LoadBMP("./ressources/robot.bmp");//Chargement du sprite robot
+  screen->tabImg[2] = SDL_LoadBMP("./ressources/fire1.bmp");
+  screen->tabImg[3] = SDL_LoadBMP("./ressources/fire2.bmp");
+  screen->tabImg[4] = SDL_LoadBMP("./ressources/fire3.bmp");
+  screen->tabImg[5] = SDL_LoadBMP("./ressources/stopfire.bmp");
+  screen->tabImg[6] = SDL_LoadBMP("./ressources/pdv.bmp");//Chargement de l'image pdv 
+  screen->tabImg[7] = SDL_LoadBMP("./ressources/nbmove.bmp");//Chargement de l'image nombre de mouvements;
+  screen->tabImg[8] = SDL_LoadBMP("./ressources/robotstopfire.bmp");//Chargement du sprite du robot possedant l'extincteur
 
   screen->position.x = 0;//Initialisation du rectangle de destination pour le blit
   screen->position.y = 0;
